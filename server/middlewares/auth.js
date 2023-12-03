@@ -7,10 +7,11 @@ const jwt = require("jsonwebtoken");
 
 exports.auth = async (req, res, next) => {
     try {
+        // console.log(req);
+        console.log(req.body);
+        console.log(req.body.token);
         //extract token
-        const token =   req.body.token
-                        || req.cookies.token
-                        || req.header("Authorization").replace("Bearer ","");
+        const token = req?.body?.token || req?.cookies?.token || req?.header("Authorization").replace("Bearer ","");
 
         // token missing
         if (!token) {

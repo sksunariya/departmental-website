@@ -1,5 +1,5 @@
 import React from 'react'
-import { useEffect, useState} from 'react'
+import { useState} from 'react'
 import { BiSolidShow , BiSolidHide } from 'react-icons/bi';
 import { useNavigate } from 'react-router-dom';
 import {toast} from 'react-hot-toast'
@@ -17,8 +17,6 @@ const Signupform = () => {
   const [showConfirmPassword, setShowConfirmPassword] = useState(false);
 
   const [formData, setFormData] = useState({firstName : "", lastName : "", email : "", password : "", confirmPass : ""})
-  
-  const {firstName, lastName, email, password, confirmPass} = formData;
 
 
   function passHandler() {
@@ -65,14 +63,13 @@ const Signupform = () => {
     
     <div className='mt-6'>
 
-      <div className='text-md font-semibold w-fit bg-gray-700 rounded-[2rem] p-0.5 flex'>
-        <div onClick={() => setAccountType("Student")} className={`cursor-pointer ${accountType === "Instructor" ? 'bg-[#03051a]' : 'bg-[#192286]'} rounded-[2rem] py-1.5 px-6`}>Student</div>
-        <div onClick={() => setAccountType("Instructor")} className={`cursor-pointer ${accountType === "Student" ? 'bg-[#03051a]' : 'bg-[#192286]'} rounded-[2rem] py-1.5 px-6`}>Instructor</div>
+      <div className='mt-6 mb-2 text-white text-md font-semibold w-fit bg-gray-700 rounded-[2rem] flex'>
+        <div onClick={() => setAccountType("Student")} className={`cursor-pointer ${accountType === "Student" ?  'bg-[#192286]' : 'bg-[#03051a]'} rounded-[2rem] py-1.5 px-4 lg:px-7`}>Student</div>
+        <div onClick={() => setAccountType("Instructor")} className={`cursor-pointer ${accountType === "Instructor" ? 'bg-[#192286]' : 'bg-[#03051a]'} rounded-[2rem] py-1.5 px-4 lg:px-7`}>Instructor</div>
+        <div onClick={() => setAccountType("Alumni")} className={`cursor-pointer ${accountType === "Alumni" ? 'bg-[#192286]' :  'bg-[#03051a]'} rounded-[2rem] py-1.5 px-4`}>Alumni</div>
       </div>
 
-      <form onSubmit={submitHandler}
-        className='flex flex-col w-full mt-4 gap-y-4'
-      >
+      <form onSubmit={submitHandler} className='flex flex-col w-full mt-4 gap-y-8'>
 
         <div className='flex gap-5'>
           <label className=' relative '>
@@ -112,7 +109,7 @@ const Signupform = () => {
           />
         </label>
         
-        <div className='flex gap-5'>
+        <div className='flex flex-col md:flex-row  gap-5'>
           <label className='w-full relative'>
             <h2 className='text-[0.875rem] text-white mb-1 leading-[1.375rem]'>Create Password <sup className='text-red-700 scale-150'>*</sup></h2>
             <input 
@@ -146,10 +143,7 @@ const Signupform = () => {
         </div>
 
 
-        <button
-        className='w-full p-1.5 my-5 text-black bg-yellow-500 rounded-[0.55rem] '
-        type='submit'
-        >
+        <button type='submit' className='w-full p-1.5 my-5 text-black bg-caribbeangreen-400 rounded-[0.55rem] '>
           Create Account
         </button>
 

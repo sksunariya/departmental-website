@@ -12,6 +12,7 @@ const courseRoutes = require('./routes/Course');
 const paymentRoutes = require('./routes/Payments');
 const profileRoutes = require('./routes/Profile');
 const userRoutes = require('./routes/User');
+const blogRoutes = require('./routes/Blog');
 
 
 
@@ -36,6 +37,7 @@ app.use('/api/v1', courseRoutes);
 app.use('/api/v1', paymentRoutes);
 app.use('/api/v1', profileRoutes);
 app.use('/api/v1', userRoutes);
+app.use('/api/v1', blogRoutes);
 
 
 

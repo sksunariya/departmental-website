@@ -47,8 +47,8 @@ const Navbar = () => {
                             <p className={`${matchRoute('/')? "text-yellow-25": "text-richblack-25" }`}> Home </p>
                         </Link>
 
-                        <Link to={'/blogs'}>
-                            <p className={`${matchRoute('/blogs')? "text-yellow-25": "text-richblack-25" }`}> Activities </p>
+                        <Link to={'/showAllBlogs'}>
+                            <p className={`${matchRoute('/showAllBlogs')? "text-yellow-25": "text-richblack-25" }`}> Activities </p>
                         </Link>
 
                         <Link to={'/courses'}>

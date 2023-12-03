@@ -1,15 +1,19 @@
 import React from 'react'
-import Template from '../components/user/Template'
+import Loginform from '../components/user/Login'
 
 const Login = () => {
   return (
-    
-    <Template
-        heading = "Welcome Back"
-        desc1 = "Build skills for today, tomorrow and beyond"
-        desc2 = "Education to future proof your future"
-        formType = "login"
-    />
+    <div className='flex justify-center items-center'>
+
+      <div className='flex flex-col  w-11/12 max-w-[450px]'>
+
+          <h1 className='text-white font-semibold text-[1.65rem] pt-20 leading-[2.375rem]'>Welcome Back</h1>
+
+          <Loginform/>
+
+      </div>
+
+    </div>
 
   )
 }

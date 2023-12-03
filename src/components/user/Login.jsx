@@ -16,10 +16,12 @@ function Loginform () {
 
   const [formData, setFormData] = useState( { email : "", password : "" } );
 
+  const {email, password} = formData;
+
   function submitHandler (event){
     event.preventDefault();
     // console.log(formData.email, formData.password);
-    dispatch(login(formData.email, formData.password, navigate));
+    dispatch(login(email, password, navigate));
   }
 
   function changeHandler(event){
@@ -82,7 +84,7 @@ function Loginform () {
           </Link>
 
 
-          <button type='submit' className='w-full p-1.5 mb-5 text-black bg-yellow-500 rounded-[0.55rem] '>
+          <button type='submit' className='w-full p-1.5 mb-5 text-black bg-caribbeangreen-400 rounded-[0.55rem] '>
             Log In
           </button>
 

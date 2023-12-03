@@ -1,6 +1,6 @@
 import { apiConnector } from "../apiConnector";
 import { endpoints } from "../apis";
-import setUser from '../../slices/profileSlice';
+import {setUser} from '../../slices/profileSlice';
 import { setLoading, setToken } from "../../slices/authSlice";
 
 import toast from "react-hot-toast";
@@ -69,6 +69,7 @@ export function login(email, password, navigate) {
       const toastId = toast.loading("Loading...")
       dispatch(setLoading(true))
       try {
+        console.log("inside login api.");
         const response = await apiConnector("POST", LOGIN_API, {email, password})
   
         console.log("Response obtained from Login API.", response)
@@ -84,7 +85,7 @@ export function login(email, password, navigate) {
         const userImage = (response.data?.user?.image) ? (response.data.user.image) : `https://api.dicebear.com/5.x/initials/svg?seed=${response.data.user.firstName} ${response.data.user.lastName}`;
         console.log("user details : ", response.data.user.image);
 
-        // dispatch(setUser({ ...response.data.user, image: userImage }))
+        dispatch(setUser({ ...response.data.user, image: userImage }))
         
         localStorage.setItem("token", JSON.stringify(response.data.token))
         localStorage.setItem("user", JSON.stringify(response.data.user))
@@ -104,8 +105,8 @@ export function login(email, password, navigate) {
   
 export function logout(navigate) {
     return (dispatch) => {
-    //   dispatch(setToken(null));
-    //   dispatch(setUser(null));
+      dispatch(setToken(null));
+      dispatch(setUser(null));
       localStorage.removeItem("token");
       localStorage.removeItem("user");
       toast.success("Logged Out");

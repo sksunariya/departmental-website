@@ -23,7 +23,7 @@ const userSchema = new mongoose.Schema(
         },
         accountType:{
             type: String,
-            enum: ["Admin", "Student", "Instructor"],
+            enum: ["Admin", "Student", "Instructor", "Alumni"],
 
         },
         additionalDetails:{
@@ -51,7 +51,13 @@ const userSchema = new mongoose.Schema(
         },
         resetPasswordExpires:{
             type: Date,
-        }
+        },
+        blogs: [
+            {
+                type: mongoose.Schema.Types.ObjectId,
+                ref: "Blog",
+            }
+        ]
     }
 );
 

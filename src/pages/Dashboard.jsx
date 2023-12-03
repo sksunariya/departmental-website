@@ -11,7 +11,7 @@ function Dashboard() {
   const navigate = useNavigate();
   const { loading: profileLoading } = useSelector((state) => state.profile)
   const { loading: authLoading } = useSelector((state) => state.auth)
-  const {user } = useSelector((state) => state.profile);
+  const {user} = useSelector((state) => state.profile);
 
   if (profileLoading || authLoading) {
     return (
@@ -31,7 +31,17 @@ function Dashboard() {
         </div>
       </button>
       }
-    
+
+
+    <div className="w-[500px] flex gap-6 mx-auto mt-20">
+      
+    <ButtonComp className="w-[100px]" children={"See your Blogs"} active={true} linkto={'/blog/userBlogs'} />
+
+    <ButtonComp children={"Create Blog"} active={true} linkto={'/blog/createBlog'}/>
+
+    </div>
+
+
     <div className="flex flex-col justify-center items-center">
     <div className="my-40 flex flex-col lg:flex-row text-left gap-3">
         <h1 className="text-left max-w-[20rem] text-white text-4xl font-semibold">

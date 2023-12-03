@@ -4,7 +4,7 @@ import ButtonComp from '../components/HomePage/Button';
 import AnimationBlock from '../components/HomePage/AnimationBlock';
 import Footer from '../components/common/Footer';
 
-import TimeLineImage from "../assets/Images/TimelineImage.png";
+import BooksImage from "../assets/Images/booksImage.jpg";
 import Logo1 from "../assets/Images/Logo1.svg";
 import Logo2 from "../assets/Images/Logo2.svg";
 import Logo3 from "../assets/Images/Logo3.svg";
@@ -71,7 +71,7 @@ const HomePage = () => {
                     heading={<div className="text-4xl font-semibold">
                                 Unlock your <span className="bg-gradient-to-b from-[#1FA2FF] via-[#12D8FA] to-[#A6FFCB] text-transparent bg-clip-text font-bold">
                                      Coding Potential
-                                </span> with our online courses.
+                                </span> with us.
                             </div>}
 
                     description={"Our courses are designed and taught by industry experts who have years of experience in coding and are passionate about sharing their knowledge with you."}
@@ -96,7 +96,7 @@ const HomePage = () => {
                 <AnimationBlock
                     position={`lg:flex-row-reverse`}
                     heading={<div className="text-4xl font-semibold">
-                                Unlock your <span className="bg-gradient-to-b from-[#1FA2FF] via-[#12D8FA] to-[#A6FFCB] text-transparent bg-clip-text font-bold"> Coding Potential</span> with our online courses.
+                                Improve your <span className="bg-gradient-to-b from-[#1FA2FF] via-[#12D8FA] to-[#A6FFCB] text-transparent bg-clip-text font-bold"> Coding Potential</span> with our online courses.
                             </div>}
 
                     description={"Our courses are designed and taught by industry experts who have years of experience in coding and are passionate about sharing their knowledge with you."}
@@ -125,7 +125,7 @@ const HomePage = () => {
                 <div className="mb-10 mt-[50px] flex flex-col justify-between gap-7 lg:mt-20 lg:flex-row lg:gap-0">
                     
                     <div className="text-4xl font-semibold lg:w-[45%] ">
-                        Get the skills you need for a <span className="bg-gradient-to-b from-[#1FA2FF] via-[#12D8FA] to-[#A6FFCB] text-transparent bg-clip-text font-bold">job that is in demand.</span>
+                        Get the skills and <span className="bg-gradient-to-b from-[#1FA2FF] via-[#12D8FA] to-[#A6FFCB] text-transparent bg-clip-text font-bold">Excel</span> in Life
                     </div>
                 
                     <div className="flex flex-col items-start gap-10 lg:w-[40%]">
@@ -152,8 +152,8 @@ const HomePage = () => {
                                     <img src={Logo1}/>
                                 </div>
                                 <div>
-                                    <h2 className="font-semibold text-[18px]">Leadership</h2>
-                                    <p className="text-base">Fully committed to the success company</p>
+                                    <h2 className="font-semibold text-[18px]">Connect to Alumni</h2>
+                                    <p className="text-base">Connects you to the Alumni</p>
                                 </div>
 
                             </div>
@@ -164,8 +164,8 @@ const HomePage = () => {
                                     <img src={Logo2}/>
                                 </div>
                                 <div>
-                                    <h2 className="font-semibold text-[18px]">Responsibility</h2>
-                                    <p className="text-base">Students will always be our top priority</p>
+                                    <h2 className="font-semibold text-[18px]">Academics</h2>
+                                    <p className="text-base">Get updates about various resources.</p>
                                 </div>
 
                             </div>
@@ -174,8 +174,8 @@ const HomePage = () => {
                                     <img src={Logo3}/>
                                 </div>
                                 <div>
-                                    <h2 className="font-semibold text-[18px]">Flexibility</h2>
-                                    <p className="text-base">The ability to switch is an important skills</p>
+                                    <h2 className="font-semibold text-[18px]">Blogs</h2>
+                                    <p className="text-base">Read top Blogs by your Alumni</p>
                                 </div>
 
                             </div>
@@ -184,8 +184,8 @@ const HomePage = () => {
                                     <img src={Logo4}/>
                                 </div>
                                 <div>
-                                    <h2 className="font-semibold text-[18px]">Solve the problem</h2>
-                                    <p className="text-base">Code your way to a solution</p>
+                                    <h2 className="font-semibold text-[18px]">Get the Guidance</h2>
+                                    <p className="text-base">Get the solution for your career.</p>
                                 </div>
 
                             </div>
@@ -208,14 +208,14 @@ const HomePage = () => {
                                 </h1>
                             </div>
                             <div className="flex gap-5 items-center lg:px-14 px-7">
-                                <h1 className="text-3xl font-bold w-[75px]">250</h1>
+                                <h1 className="text-3xl font-bold w-[75px]">150</h1>
                                 <h1 className="text-caribbeangreen-300 text-sm w-[75px]">
-                                    types of courses
+                                    Different Companies
                                 </h1>
                             </div>
                         </div>
 
-                        <img src={TimeLineImage}/>
+                        <img src={BooksImage}/>
 
                     </div>
 

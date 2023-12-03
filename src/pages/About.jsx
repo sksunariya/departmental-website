@@ -1,5 +1,5 @@
 import React from "react"
-import FoundingStory from "../assets/Images/FoundingStory.png"
+import FoundingStory from "../assets/Images/founderStory.webp"
 import Footer from "../components/common/Footer"
 
 const About = () => {
@@ -42,7 +42,7 @@ const About = () => {
             </div>
 
             <div>
-              <img src={FoundingStory} alt="" className="shadow-[0_0_20px_0] shadow-[#FC6767]" />
+              <img src={FoundingStory} alt="" className="w-[550px] shadow-[0_0_20px_0] shadow-[#FC6767]" />
             </div>
           </div>
           <div className="flex flex-col items-center lg:gap-10 lg:flex-row justify-between">

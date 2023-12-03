@@ -7,7 +7,6 @@ import {Toaster} from 'react-hot-toast';
 import { Provider } from 'react-redux';
 import rootReducer from './reducers/index';
 import { configureStore } from '@reduxjs/toolkit';
-import AppContextProvider from './services/apiLinks/blogsAPI';
 
 const store = configureStore({reducer: rootReducer});
 
@@ -16,9 +15,7 @@ root.render(
 
     <Provider store={store}>
       <BrowserRouter>
-        <AppContextProvider>
           <App/>
-        </AppContextProvider>
         <Toaster/>
       </BrowserRouter>
     </Provider>

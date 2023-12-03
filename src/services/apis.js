@@ -12,4 +12,12 @@ export const endpoints = {
     RESETPASS_API: BASE_URL + '/user/resetPassword',
 
     CONTACT_US_API : BASE_URL + '/contact',
+
+
+    // blogs
+    CREATEBLOG_API: BASE_URL + '/blog/createBlog',
+    UPDATEBLOG_API: BASE_URL + '/blog/updateBlog',
+    DELETEBLOG_API: BASE_URL + '/blog/deleteBlog',
+    SHOWALLBLOGS_API: BASE_URL + '/blog/showAllBlogs',
+    USERBLOGS_API: BASE_URL + '/blog/userBlogs',
 }
