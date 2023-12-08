@@ -27,7 +27,7 @@ app.use(
 )
 // ADDING CORS SUCH THAT BACKEND ENTERTAINS REQUEST OF FRONTEND
 app.use(cors({
-    origin: 'http://localhost:3000',
+    origin: '*',
     credentials: true,
 }))
 
