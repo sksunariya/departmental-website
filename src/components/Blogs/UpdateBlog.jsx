@@ -27,7 +27,7 @@ const UpdateBlog = () => {
   return (
     <div className='text-white flex justify-center items-center gap-10'>
 
-        <form onSubmit={submitHandler} className='lg:my-10 border-[1px] border-white border-opacity-40 rounded-lg mx-5 py-16 md:px-10 lg:px-16 max-w-3xl w-11/12 flex flex-col gap-10'>
+        <form onSubmit={submitHandler} className='my-10 border-[1px] border-white border-opacity-40 rounded-lg mx-5 md:py-16 md:px-10 lg:px-16 max-w-3xl w-11/12 flex flex-col gap-10'>
 
             <h1 className='text-white font-bold  text-4xl'>Publish Your  <span className="bg-gradient-to-b from-[#1f75ff] via-[#12D8FA] to-[#1f2f25] text-transparent bg-clip-text font-bold">Thoughts </span> in your way</h1>
 
@@ -80,7 +80,7 @@ const UpdateBlog = () => {
             <label className='w-full'>
                 <h2 className='text-white mb-1 ml-1 text-lg'>Description <sup className=' text-pink-200'>*</sup></h2>
 
-                <textarea className=' bg-richblack-500 py-3 px-6  focus:outline-none label-shadow text-black w-full bg-opacity-60 p-[6px] border-b-[0.05rem] border-opacity-25 rounded-lg'
+                <textarea className=' bg-richblack-500 text-white py-3 px-6  focus:outline-none label-shadow w-full bg-opacity-60 p-[6px] border-b-[0.05rem] border-opacity-25 rounded-lg'
                     type='text'
                     name='description'
                     cols="30"
