@@ -26,7 +26,7 @@ const CreateBlog = () => {
   return (
     <div className='text-white flex justify-center items-center gap-10'>
 
-        <form onSubmit={submitHandler} className='lg:my-10 border-[1px] border-white border-opacity-40 rounded-lg mx-5 py-16 md:px-10 lg:px-16 max-w-3xl w-11/12 flex flex-col gap-10'>
+        <form onSubmit={submitHandler} className='my-10 md:border-[1px] border-white border-opacity-40 rounded-lg mx-5 md:py-16 md:px-10 lg:px-16 max-w-3xl w-11/12 flex flex-col gap-10'>
 
             <h1 className='text-white font-bold  text-4xl'>Publish Your  <span className="bg-gradient-to-b from-[#1f75ff] via-[#12D8FA] to-[#1f2f25] text-transparent bg-clip-text font-bold">Thoughts </span> in your way</h1>
 
