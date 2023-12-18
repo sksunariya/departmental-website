@@ -1,6 +1,13 @@
+# Departmental-website for sharing Blogs
+
 This repository contains code for a website that was created for my department where users can share their ideas.
 
 Check out the website [here](https://departmental-website.vercel.app/).
+
+## Motivation
+
+I created this website in order to connect the Alumni with the Institute and Students. 
+This website will be very beneficial for the students as they can get guidance from the industry experts.
 
 # Flow of the website
 
